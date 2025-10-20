@@ -1,0 +1,5 @@
+// Fichier principal SCSS qui importe tous les autres
+@use './variables.scss';
+@use './base.scss';
+@use './components.scss';
+@use './utilities.scss';
