@@ -31,17 +31,17 @@ class HttpClient {
     }
 
     const config: RequestInit = {
+      ...options,
       headers: {
         'Content-Type': 'application/json',
         ...options?.headers,
       },
-      ...options,
     }
 
     const response = await fetch(fullUrl, config)
 
     if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}))
+      const errorData = await response.json()
       throw new Error(errorData.message || `HTTP Error: ${response.status}`)
     }
 
