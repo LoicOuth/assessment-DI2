@@ -42,10 +42,13 @@ Le projet est déjà configuré avec :
 # 1. Installation des dépendances
 npm install
 
-# 2. Lancement du serveur de développement
+# 2. Copier et renommer .env
+cp .env.example .env
+
+# 3. Lancement du serveur de développement
 npm run dev
 
-# 3. Ouvrir dans le navigateur
+# 4. Ouvrir dans le navigateur
 # L'application sera disponible sur http://localhost:5173
 ```
 
